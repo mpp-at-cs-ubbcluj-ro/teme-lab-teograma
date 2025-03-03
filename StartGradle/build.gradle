@@ -21,13 +21,13 @@ dependencies {
 }
 
 application {
-    mainClass = 'ComputerShopMain'
+    mainClass = 'ro.mpp2024.ComputerShopMain'
 }
 
 jar {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     manifest {
-        attributes('Main-Class': 'ComputerShopMain')
+        attributes('Main-Class': 'ro.mpp2024.ComputerShopMain')
     }
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }

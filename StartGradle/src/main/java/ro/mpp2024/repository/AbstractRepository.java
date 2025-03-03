@@ -17,26 +17,29 @@ public class AbstractRepository<T extends Identifiable<ID>, ID> implements Repos
     public void add(T el) {
         if (elem.containsKey(el.getID())) {
             throw new RuntimeException("Element already exists!!!");
-        } else
+        } else {
             elem.put(el.getID(), el);
+        }
     }
 
     public void delete(T el) {
-        if (elem.containsKey(el.getID()))
+        if (elem.containsKey(el.getID())) {
             elem.remove(el.getID());
+        }
     }
 
     public void update(T el, ID id) {
-        if (elem.containsKey(id))
+        if (elem.containsKey(id)) {
             elem.put(el.getID(), el);
-        else
+        } else {
             throw new RuntimeException("Element doesn’t exist");
+        }
     }
 
     public T findById(ID id) {
-        if (elem.containsKey(id))
+        if (elem.containsKey(id)) {
             return elem.get(id);
-        else {
+        } else {
             throw new RuntimeException("Element doesn't exist");
         }
     }
