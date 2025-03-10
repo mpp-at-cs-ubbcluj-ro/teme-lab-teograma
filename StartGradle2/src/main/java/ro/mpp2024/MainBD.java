@@ -14,7 +14,7 @@ public class MainBD {
         }
 
         CarRepository carRepo = new CarsDBRepository(props);
-        carRepo.add(new Car("Tesla", "Model S", 2019));
+        carRepo.add(new Car("Tesla", "Model S", 2020));
 
         System.out.println("Toate masinile din db");
         for (Car car : carRepo.findAll())
