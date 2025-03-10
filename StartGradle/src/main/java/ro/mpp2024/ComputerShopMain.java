@@ -11,6 +11,7 @@ public class ComputerShopMain {
         System.out.println("Adaugam in repo ...");
         repo.add(new ComputerRepairRequest(1, "A A", "Address A", "072222", "Asus", "13/10/2020", "Broken display"));
         repo.add(new ComputerRepairRequest(2, "B B", "Address B", "072222", "Acer", "10/10/2020", "Faulty keyboard"));
+        repo.add(new ComputerRepairRequest(3, "C C", "Address C", "072222", "Lenovo", "11/10/2020", "Broken display"));
 
         System.out.println("Afisam datele din repository ...");
         for (ComputerRepairRequest first : repo.findAll())

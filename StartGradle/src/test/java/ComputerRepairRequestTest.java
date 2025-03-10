@@ -20,5 +20,6 @@ public class ComputerRepairRequestTest {
 
     public void testExample2() {
         assertEquals(2, 2, "The numbers must be equal!");
+        assertEquals(3, 3, "The numbers must be equal!");
     }
 }

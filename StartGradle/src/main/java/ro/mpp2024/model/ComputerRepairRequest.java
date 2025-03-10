@@ -12,7 +12,6 @@ public class ComputerRepairRequest implements Identifiable<Integer>, Serializabl
     private String problemDescription;
 
     public ComputerRepairRequest() {
-
         this.ID = 0;
         this.ownerName = "";
         this.ownerAddress = "";
@@ -42,10 +41,6 @@ public class ComputerRepairRequest implements Identifiable<Integer>, Serializabl
 
     public Integer getID() {
         return ID;
-    }
-
-    public void setID(Integer id) {
-        ID = id;
     }
 
     @Override
